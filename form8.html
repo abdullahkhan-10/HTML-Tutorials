@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form and input tags</title>
+</head>
+<body>
+    <!-- name attribute is for backend -->
+    <!-- label is for user interactivity -->
+
+    <h3>HTML Form:</h3>
+    <form action="backend.django">
+        <label for="myname">Name:</label>
+        <input type="text" name="first-name" id="myname" placeholder="Enter your name">            
+        <br><br>
+
+        <label for="myrole">Role:</label>
+        <input type="text" name="company-role" id="myrole">
+        <br><br>
+
+        <label for="user-email">Email:</label>
+        <input type="email" name="myemail" id="user-email" required>
+        <br><br>
+
+        <lable for="date">Date:</lable>
+        <input type="date" name="curren-date" id="date">
+        <br><br>
+
+        <label for="bonus">Bonus:</label>
+        <input type="number" name="promotion" id="bonus">
+        <br><br>
+
+        <!-- Check box -->
+        <label for="eligibilty">Are you Eligible:</label>
+        <input type="checkbox" name="eligibility-req" id="eligibilty" checked>Yes
+        <input type="checkbox" name="eligibility-req" id="eligibilty">No
+        <br><br>
+
+        <!-- Radio -->
+        <label for="gender">Select Gender:</label>
+        <input type="radio" name="gender" id="gender">Male
+        <input type="radio" name="gender" id="gender">Female
+        <input type="radio" name="gender" id="gender">Other
+        <br><br>
+
+        <label for="text">Write about yourself:</label>
+        <textarea name="feedback" id="text" cols="50" rows="10" palceholder="Please give us feedback"></textarea>
+        <br><br>
+
+        <!-- Dropdown -->
+        <label for="car">Cars Collection:</label>
+        <select name="mycars" id="car">
+            <option value="tesla">Tesla</option>
+            <option value="bmw">BMW</option>
+            <option value="honda">Honda</option>
+            <option value="toyota">Toyota</option>
+        </select>
+        <br><br>
+        
+        <label for="submit">Submit Now</label>
+        <input type="submit" value="Submit Now" id="submit">
+        <br><br>
+
+        <label for="reset">Reset Now</label>
+        <input type="reset" value="Reset Now" id="reset" >
+    </form>
+</body>
+</html>
